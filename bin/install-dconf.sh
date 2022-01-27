@@ -45,8 +45,8 @@ gsettings set org.gnome.desktop.wm.keybindings switch-applications "['<Primary>T
 gsettings set org.gnome.desktop.wm.keybindings switch-applications-backward "['<Primary><Shift>Tab']"
 gsettings set org.gnome.desktop.wm.keybindings switch-group "['<Primary>grave']"
 gsettings set org.gnome.desktop.wm.keybindings switch-group-backward "['<Primary><Shift>grave']"
-gsettings set org.gnome.desktop.wm.keybindings switch-input-source "[]"
-gsettings set org.gnome.desktop.wm.keybindings switch-input-source-backward "[]"
+gsettings set org.gnome.desktop.wm.keybindings switch-input-source "['<Super>space']"
+gsettings set org.gnome.desktop.wm.keybindings switch-input-source-backward "['<Shift><Super>space']"
 
 # Workspace switching hotkeys
 gsettings reset org.gnome.desktop.wm.keybindings switch-to-workspace-down
@@ -94,7 +94,7 @@ else
   gsettings set org.gnome.settings-daemon.plugins.media-keys window-screenshot "['<Primary><Shift>percent']"
 fi
 
-gsettings set org.gnome.settings-daemon.plugins.media-keys screensaver "[]"
+gsettings set org.gnome.settings-daemon.plugins.media-keys screensaver "['<Primary><Super>q']"
 
 # Setting relocatable schema
 gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ copy '<Primary>c'
